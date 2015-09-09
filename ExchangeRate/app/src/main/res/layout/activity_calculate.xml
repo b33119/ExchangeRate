@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_gravity="right"
+        android:numeric="decimal"
+        android:singleLine="true"
+        android:layout_below="@+id/rgroup"
+        android:layout_alignLeft="@+id/input2"
+        android:layout_alignStart="@+id/input2"
+        android:layout_marginTop="34dp" />
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_gravity="right"
+        android:layout_marginLeft="54dp"
+        android:layout_marginStart="54dp"
+        android:layout_below="@+id/input1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:id="@+id/ch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新台幣"
+        android:layout_alignBaseline="@+id/input1"
+        android:layout_alignBottom="@+id/input1"
+        android:layout_toRightOf="@+id/input1"
+        android:layout_toEndOf="@+id/input1" />
+
+    <RadioGroup
+        android:id="@+id/rgroup"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdbtn1"
+            android:layout_alignParentTop="true"
+            android:checked="true"
+            android:layout_alignEnd="@+id/button2" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdbtn2"
+            android:layout_below="@+id/rdbtn1"
+            android:layout_alignEnd="@+id/button2" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/ch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="美金"
+        android:layout_alignBaseline="@+id/input2"
+        android:layout_alignBottom="@+id/input2"
+        android:layout_alignLeft="@+id/ch1"
+        android:layout_alignStart="@+id/ch1" />
+
+
+</RelativeLayout>

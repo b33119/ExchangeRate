@@ -41,7 +41,7 @@ public class MainActivity extends Activity {
                 // Connect to website
                 Document document = Jsoup.connect(url).get();
                 trdes = document.getElementsByTag("tr");
-                for(int i=13;i<32;i++) {
+                for(int i=11;i<30;i++) {
                     HashMap = new HashMap<String, String>();
                     tddes = trdes.get(i).select("td");
                     country = tddes.get(0).before("&nbsp").text();
